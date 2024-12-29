@@ -1,0 +1,7 @@
+services:
+  db:
+    image: bitnami/postgresql:17.2.0-debian-12-r5
+    ports:
+      - '5432:5432'
+    env_file:
+      - ./api/.env
