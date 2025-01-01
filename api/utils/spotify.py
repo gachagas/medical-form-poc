@@ -50,7 +50,6 @@ if __name__ == "__main__":
         df.groupby(["master_metadata_track_name"]).size().reset_index(name="play_count")
     )
 
-    sorted = song_play_counts_df.sort_values('play_count',ascending=False)
-
+    sorted = song_play_counts_df.sort_values("play_count", ascending=False)
 
     print(sorted.head(40))
